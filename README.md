@@ -92,12 +92,12 @@ pip install tensorflow torch transformers scikit-learn pandas numpy matplotlib s
 This project was completed in collaboration with:
 
 * Lin Zhang
-* Kashvi Patel
+* Kashvi Vijay
 * Nancy Huang
 * Adriena Jiang
 * Ousman Baldeh
-* Sanskriti Sharma
-* Harshika Patel
+* Sanskriti Khadka
+* Harshika Agrawal
 
 **Coach:** Jenna Hunte  
 **Challenge Advisor:** Abdul (Accenture)
