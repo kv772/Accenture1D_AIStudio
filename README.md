@@ -73,12 +73,7 @@ print("Fake" if prediction == 1 else "Real")
 * Used datasets from [Kaggle Fake News Dataset](https://www.kaggle.com/datasets/emineyetm/fake-news-detection-datasets/data), which includes two CSV files: one containing real news articles and one containing fake news articles.
 * The true news file included ~21,000 unique entries whie the fake news file included ~18,000 unique entries.
 * Each dataset contains fields such as title, text, subject and date providing multiple features for analysis.
-
-#### Preprocessing & Cleaning
-* Loaded and processed data using Python to prepare it for modeling.
-* Applied text preprocessing steps including cleaning, nromalization and basic feature engineering.
-* Conducted extensive EDA to identify potential data leakages or fields that could unintentionally reveal class labels.
-* Removed features that were problematic or not useful for modeling such as URLs, subject labels, and stop words, to prevent models from relying on non-semantic shortcuts.
+* Conducted extensive EDA to identify potential data leakages, feature enginered, and applied text processing steps (tokenization, stop word removal) to transform our dataset for model development.
 
 ## Model Developement
 ### 1. Logistic Regression
@@ -93,13 +88,13 @@ print("Fake" if prediction == 1 else "Real")
   * Performance: 94% accuracy, F1-score: 96%.
 ### 3. Neural Networks
   * Neural Networks allowed us to capture more complex linguistic patterns through deep learning architectures built with TensorFlow/Keras.
-  * 
-  #### Model A: Global Average Pooling
+
+  ### Model A: Global Average Pooling
   * Uses word embeddings and averages them to learn the overall meaning of the article.
   * Serves as a simple and fast baseline deep learning model.
   * Performance: 93.5% accuracy.
 
-  #### Model B: 1D CNN
+  ### Model B: 1D CNN
   * Uses embeddings combined with a convolutional layer to learn phrase-level patterns (n-grams).
   * Better at capturing tone and structural signals within the text.
   * Performance: 96% accuracy.
@@ -113,35 +108,14 @@ This notebook contains the full workflow/pipeline for building and evaluation ou
 
 ## Results and Key Findings
 
-#### Model Performance
-We successfully trained and evaluated four different models for fake news classification:
-- Logistic Regression
-- BERT (Bidirectional Encoder Representations from Transformers)
-- Neural Networks
-Each model achieved strong performance, demonstrating that both traditional ML and deep learning architectures can effectively support misinformation detection tasks.
+Successfully trained and evaluated three different models for fake news classification. Each model achieved strong performance, demonstrating that both traditional ML and deep learning architectures can effectively support misinformation detection tasks. The models show strong potential as screening or triage tools to assist human content moderators by flagging potentially misleading content for further review.
+| Model | Accuracy |
+|------|--------|
+|Logistic Regression|74%|
+|BERT|94%|
+|Average Embedding|93.5%|
+|CNN| 96%|
 
-#### Dataset Insights
-During exploration of the Kaggle Fake News datasets, we identified several key findings:
-- Fake news articles contained significantly more punctuation, including ~12× more exclamation and question marks than real news.
-- URL tokens (`<URL>`) appeared far more often in fake articles, creating an unintended shortcut for classification.
-- The subject column (political categories) acted as a strong predictor, introducing data leakage risks.
-
-#### Bias Analysis
-We examined dataset-level biases that could affect model generalizability:
-- Heavy political-topic dominance, limiting performance on non-political news.
-- Publisher/source bias, since original news outlets influence writing style.
-- Class imbalance, requiring careful preprocessing and model tuning.
-
-#### Preprocessing Summary
-To reduce leakage and prepare the text for modeling, we implemented:
-- Removal of URLs  
-- Punctuation review and filtering  
-- Stop-word removal (kept for BERT models)  
-- Tokenization and text normalization  
-
-#### Overall Findings
-- All models achieved viable performance metrics, confirming that machine learning can serve as an effective first layer of misinformation detection.
-- The models show strong potential as screening or triage tools to assist human content moderators by flagging potentially misleading content for further review.
 
 ## Discusson and Reflection
 
@@ -150,7 +124,6 @@ Throughout this project, our team found different modeling approaches excelled f
 ## Next Steps
 
 - Although our models achieved high accuracy, this may indicate remaining sources of data leakage. Our next step is to perform deeper cleaning and feature analysis to identify and remove any remaining unintended signals.
-- Continue refining BERT and neural network models to reduce overfitting and improve their generalization to unseen data.
 - Re-train all models under stricter preprocessing conditions with a target accuracy of **70–75%**, which likely reflects the dataset’s true difficulty once leakage is fully mitigated.
 
 ## Acknowledgments 
