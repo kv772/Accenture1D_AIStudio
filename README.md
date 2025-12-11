@@ -1,6 +1,6 @@
 # Fake News Detection & Classification
 
-**Accenture AI Studio Challenge Project - Fall 2025**
+**Accenture AI Studio Challenge Project**
 
 Investigated how well machine learning models can identify fake news articles compared to human review, applying Python, NLP, and deep learning methods within Break Through Tech AI's AI Studio accelerator program.
 
@@ -92,10 +92,10 @@ pip install tensorflow torch transformers scikit-learn pandas numpy matplotlib s
 This project was completed in collaboration with:
 
 * Lin Zhang
-* Kashvi Vijay
+* **[Kashvi Vijay](https://github.com/kv772)**
 * Nancy Huang
-* Adriena Jiang
-* Ousman Baldeh
+* **[Adriena Jiang](https://github.com/adrienajiang)**
+* **[Ousman Bah](https://github.com/Ousmanbah10)**
 * Sanskriti Khadka
 * Harshika Agrawal
 
@@ -104,4 +104,4 @@ This project was completed in collaboration with:
 
 ---
 
-**Acknowledgments:** Thanks to Accenture and Break Through Tech AI for this opportunity and guidance throughout the project.
+**Acknowledgments:** Special thanks to Accenture and Break Through Tech AI for this opportunity and guidance throughout the project.
