@@ -58,6 +58,59 @@ Open `Accenture_1D_Model.ipynb` and run all cells.
 
 ---
 
+## Running the Web Application
+
+### Backend Server (Flask API)
+1. Navigate to the backend directory:
+```bash
+cd backend
+```
+
+2. Install backend dependencies:
+```bash
+pip3 install Flask flask-cors joblib scikit-learn numpy scipy
+```
+
+3. Start the Flask server:
+```bash
+python3 app.py
+```
+
+The backend API will be running at **http://localhost:5001**
+
+### Frontend (React Web App)
+1. Navigate to the WEB directory:
+```bash
+cd WEB
+```
+
+2. Install frontend dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm run dev
+```
+
+The web application will be running at **http://localhost:3000**
+
+**Note:** If port 3000 is already in use, Vite will automatically run on the next available port (e.g., 3001, 3002).
+
+### Running Both Servers
+Open two terminal windows and run:
+- **Terminal 1:** `cd backend && python3 app.py`
+- **Terminal 2:** `cd WEB && npm run dev`
+
+Then open **http://localhost:3000** in your browser to use the Fake News Detector!
+
+**Note:** If your ports are occupied, the servers will run on different ports. Check the terminal output for the actual URLs:
+- Backend: Usually http://localhost:5001 (or next available port)
+- Frontend: Usually http://localhost:3000 (or next available port shown in terminal)
+
+---
+
 ## Project Overview
 
 * Trust in digital media and content moderation are critical challenges in today's information ecosystem. Social media platforms, publishers, and advertisers face financial and reputational risk when their services propogate false information. Manual review of news articles is infeasible at scale. With the exponential growth of online content, there is a growing need for automated tools that can support content moderators and improve detection consistency.
