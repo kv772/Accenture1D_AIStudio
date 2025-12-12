@@ -25,31 +25,34 @@ Investigated how well machine learning models can identify fake news articles co
 
 
 ## Setup and Installation
-### Clone the Repository
+
+### Running the Notebook
+
+#### Clone the Repository
 ```bash
 git clone https://github.com/kv772/Accenture1D_AIStudio.git
 cd Accenture1D_AIStudio
 ```
 
-### Create the Virtual Environment
+#### Create the Virtual Environment
 ```bash
 python3 -m venv venv
 source venv/bin/activate # MacOS/Linux
 venv\Scripts\activate # Windows
 ```
 
-### Install Dependencies
+#### Install Dependencies
 Ensure you are in the project folder and virtual environment is active.
 ```bash
 pip install -r requirements.txt
 ```
 
-### Download the Datasets
+#### Download the Datasets
 This projet uses the [Kaggle Fake News Dataset](https://www.kaggle.com/datasets/emineyetm/fake-news-detection-datasets/data).
 
 After downloading, update notebook paths accordingly.
 
-### Run the Notebook
+#### Run the Notebook
 ```bash
 jupyter notebook
 ```
@@ -58,9 +61,9 @@ Open `Accenture_1D_Model.ipynb` and run all cells.
 
 ---
 
-## Running the Web Application
+### Running the Web Application
 
-### Backend Server (Flask API)
+#### Backend Server (Flask API)
 1. Navigate to the backend directory:
 ```bash
 cd backend
@@ -78,7 +81,7 @@ python3 app.py
 
 The backend API will be running at **http://localhost:5001**
 
-### Frontend (React Web App)
+#### Frontend (React Web App)
 1. Navigate to the WEB directory:
 ```bash
 cd WEB
@@ -98,7 +101,7 @@ The web application will be running at **http://localhost:3000**
 
 **Note:** If port 3000 is already in use, Vite will automatically run on the next available port (e.g., 3001, 3002).
 
-### Running Both Servers
+#### Running Both Servers
 Open two terminal windows and run:
 - **Terminal 1:** `cd backend && python3 app.py`
 - **Terminal 2:** `cd WEB && npm run dev`
