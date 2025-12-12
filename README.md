@@ -25,41 +25,36 @@ Investigated how well machine learning models can identify fake news articles co
 
 
 ## Setup and Installation
+### Clone the Repository
 ```bash
-pip install tensorflow torch transformers scikit-learn pandas numpy matplotlib seaborn joblib
+git clone https://github.com/kv772/Accenture1D_AIStudio.git
+cd Accenture1D_AIStudio
 ```
 
-### Usage
-
-#### Load Saved Models
-```python
-import joblib
-from tensorflow.keras.models import load_model
-from transformers import BertForSequenceClassification, BertTokenizer
-
-# Load Keras Models
-lstm_model = load_model('lstm_model.keras')
-baseline_model = load_model('baseline_model.keras')
-
-# Load Logistic Regression
-log_reg = joblib.load('logistic_regression_model.pkl')
-
-# Load BERT model
-bert_model = BertForSequenceClassification.from_pretrained('bert_fake_news_model')
-tokenizer = BertTokenizer.from_pretrained('bert_fake_news_model')
+### Create the Virtual Environment
+```bash
+python3 -m venv venv
+source venv/bin/activate # MacOS/Linux
+venv\Scripts\activate # Windows
 ```
 
-#### Making Predictions
-```python
-import torch
-
-# Example with BERT
-text = "Your news article here..."
-inputs = tokenizer(text, return_tensors="pt", max_length=128, truncation=True, padding=True)
-outputs = bert_model(**inputs)
-prediction = torch.argmax(outputs.logits, dim=1)
-print("Fake" if prediction == 1 else "Real")
+### Install Dependencies
+Ensure you are in the project folder and virtual environment is active.
+```bash
+pip install -r requirements.txt
 ```
+
+### Download the Datasets
+This projet uses the [Kaggle Fake News Dataset](https://www.kaggle.com/datasets/emineyetm/fake-news-detection-datasets/data).
+
+After downloading, update notebook paths accordingly.
+
+### Run the Notebook
+```bash
+jupyter notebook
+```
+
+Open `Accenture_1D_Model.ipynb` and run all cells.
 
 ---
 
