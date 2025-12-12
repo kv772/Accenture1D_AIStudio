@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Load the pipeline (contains both vectorizer and logistic regression model)
-pipeline = joblib.load('../Models/logistic_regression_model.joblib')
+pipeline = joblib.load('../logistic_regression_model.joblib')
 
 def preprocess_text(text):
     """Clean and preprocess text"""
