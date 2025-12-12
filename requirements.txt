@@ -15,4 +15,4 @@ pyspellchecker
 geotext
 langdetect
 wordfreq
-ipython
+ipython 
