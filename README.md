@@ -8,12 +8,12 @@ Investigated how well machine learning models can identify fake news articles co
 
 | Name | GitHub | Contribution |
 |------|--------|--------------|
-| Lin Zhang | [@lin-zhang88](https://github.com/lin-zhang88) | Exploratory Data Analysis, BERT, Feature Engineering |
-| Kashvi Vijay | [@kv772](https://github.com/kv772) | Logistic Regression, Feature Engineering |
-| Nancy Huang | [@naanci](https://github.com/naanci) | Feature Engineering, BERT, Exploratory Data Analysis |
+| Lin Zhang | [@lin-zhang88](https://github.com/lin-zhang88) | Exploratory Data Analysis, Feature Engineering, BERT |
+| Kashvi Vijay | [@kv772](https://github.com/kv772) | Feature Engineering, Logistic Regression |
+| Nancy Huang | [@naanci](https://github.com/naanci) | Exploratory Data Analysis, Feature Engineering, BERT |
 | Adriena Jiang | [@adrienajiang](https://github.com/adrienajiang) | Exploratory Data Analysis, Visualizations, Feature Engineering |
-| Ousman Bah | [@Ousmanbah10](https://github.com/Ousmanbah10) | Feature Engineering, Exploratory Data Analysis, CNN |
-| Sanskriti Khadka | [@Sanskritik7](https://github.com/sanskritik7) | Exploratory Data Analysis, CNN, Feature Engineering |
+| Ousman Bah | [@Ousmanbah10](https://github.com/Ousmanbah10) | Exploratory Data Analysis, Feature Engineering, CNN |
+| Sanskriti Khadka | [@Sanskritik7](https://github.com/sanskritik7) | Exploratory Data Analysis, Feature Engineering, CNN |
 | Harshika Agrawal | [@HarshikaAgr](https://github.com/HarshikaAgr) | Exploratory Data Analysis, Logistic Regression |
 
 
