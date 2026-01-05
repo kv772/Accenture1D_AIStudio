@@ -48,7 +48,7 @@ pip install -r requirements.txt
 ```
 
 #### Download the Datasets
-This projet uses the [Kaggle Fake News Dataset](https://www.kaggle.com/datasets/emineyetm/fake-news-detection-datasets/data).
+This project uses the [Kaggle Fake News Dataset](https://www.kaggle.com/datasets/emineyetm/fake-news-detection-datasets/data).
 
 After downloading, update notebook paths accordingly.
 
@@ -116,17 +116,17 @@ Then open **http://localhost:3000** in your browser to use the Fake News Detecto
 
 ## Project Overview
 
-* Trust in digital media and content moderation are critical challenges in today's information ecosystem. Social media platforms, publishers, and advertisers face financial and reputational risk when their services propogate false information. Manual review of news articles is infeasible at scale. With the exponential growth of online content, there is a growing need for automated tools that can support content moderators and improve detection consistency.
-* This project with Accenture aims to utilize deep learning techniques and NLP models to accurately classify real and fake news. Understanding the projects strength and weaknesses align with Accentures responsible AI initiatives, strengthen digital trust offerings for clients and automate content vertifcation/risk detection.
+* Trust in digital media and content moderation are critical challenges in today's information ecosystem. Social media platforms, publishers, and advertisers face financial and reputational risk when their services propagate false information. Manual review of news articles is infeasible at scale. With the exponential growth of online content, there is a growing need for automated tools that can support content moderators and improve detection consistency.
+* This project with Accenture aims to utilize deep learning techniques and NLP models to accurately classify real and fake news. Understanding the projects strength and weaknesses align with Accentures responsible AI initiatives, strengthen digital trust offerings for clients and automate content verification/risk detection.
 
 ## Data Exploration
 
 * Used datasets from [Kaggle Fake News Dataset](https://www.kaggle.com/datasets/emineyetm/fake-news-detection-datasets/data), which includes two CSV files: one containing real news articles and one containing fake news articles.
-* The true news file included ~21,000 unique entries whie the fake news file included ~18,000 unique entries.
+* The true news file included ~21,000 unique entries while the fake news file included ~18,000 unique entries.
 * Each dataset contains fields such as title, text, subject and date providing multiple features for analysis.
-* Conducted extensive EDA to identify potential data leakages, feature enginered, and applied text processing steps (tokenization, stop word removal) to transform our dataset for model development.
+* Conducted extensive EDA to identify potential data leakages, feature engineered, and applied text processing steps (tokenization, stop word removal) to transform our dataset for model development.
 
-## Model Developement
+## Model Development
 ### 1. Logistic Regression
   * Logistic Regression was selected because it is lightweight, interpretable, and a strong baseline for text classification.
   * Paired with TF-IDF, it effectively captures key linguistic and stylistic cues that differentiate real and fake news.
@@ -154,7 +154,7 @@ Then open **http://localhost:3000** in your browser to use the Fake News Detecto
 
 ### `Accenture_1D_Model.ipynb`
 
-This notebook contains the full workflow/pipeline for building and evaluation our models for fake news detection.
+This notebook contains the full workflow/pipeline for building and evaluating our models for fake news detection.
 
 
 ## Results and Key Findings
@@ -168,9 +168,9 @@ Successfully trained and evaluated three different models for fake news classifi
 |CNN| 96%|
 
 
-## Discusson and Reflection
+## Discussion and Reflection
 
-Throughout this project, our team found different modeling approaches excelled for different reasons. Traditional machine learning models like Logistic Regression performed suprisingly well, especially when paired with TF-IDF, because they captured strong stylistic signals in the text. Deep learning models, such as neural networks and BERT, performed well they captured phrase level patterns effectively and leverage contextual understanding to handle subtle word differences. Our deep learning models are still experiencing overfitting indicating the importance of careful data exploration before model development.
+Throughout this project, our team found different modeling approaches excelled for different reasons. Traditional machine learning models like Logistic Regression performed surprisingly well, especially when paired with TF-IDF, because they captured strong stylistic signals in the text. Deep learning models, such as neural networks and BERT, performed well they captured phrase level patterns effectively and leverage contextual understanding to handle subtle word differences. Our deep learning models are still experiencing overfitting indicating the importance of careful data exploration before model development.
 
 ## Next Steps
 
